@@ -20,6 +20,7 @@
             <p><a href="<?php echo $s_url; ?>php-snack-hotel/index.php?max-vote=3">index.php?max-vote=3</a></p>
             <p><a href="<?php echo $s_url; ?>php-snack-hotel/index.php?center-distance=10">index.php?center-distance=10</a></p>
         </header>
+        <main>
             <?php if ($results['success']) { ?>
                 <?php foreach ($results['data'] as $hotel) { ?>
                 <div class="hotel">
@@ -41,5 +42,6 @@
             <?php } else { ?>
                 <h1><?php echo $results['message']; ?></h1>
             <?php } ?>
+        </main>
     </body>
 </html>
